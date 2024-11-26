@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //#28 Math
+        //retorna un numero entero entre 0y 1000
+        //Math.floor(Math.random()*1001)
+
+        //27 Date
+
+        /* console.log(Date())
+
+        const date = new Date();
+        console.log(date)
+        console.log(date.getDate())
+        console.log(date.getDay())
+        console.log(date.getYear())
+        console.log(date.getFullYear())
+        console.log(date.getHours())
+        console.log(date.getMinutes())
+        console.log(date.getSeconds())
+        console.log(date.getMilliseconds())
+        console.log(date.toString())
+        console.log(date.toDateString())
+        console.log(date.toLocaleString())
+        console.log(date.toLocaleDateString())
+        console.log(date.toLocaleTimeString())
+        console.log(date.getTimezoneOffset())
+        console.log(date.getUTCDate())
+        console.log(date.getUTCHours())
+        console.log(Date.now())        
+        
+        const birthday = new Date(2003, 8, 30)
+        console.log(birthday) */
+
+        //#24 clases
+
+        /* class Animal {
+            constructor(nombre, genero) {
+                this.nombre = nombre;
+                this.genero = genero;
+            }
+            saludar() {
+                console.log(`Hola, mi nombre es ${this.nombre} y soy de genero ${this.genero}`)
+            }
+
+        }
+
+        class Perro extends Animal {
+            constructor(nombre, genero, raza) {
+                super(nombre, genero)
+                this.raza = raza
+            }
+            ladrar() {
+                console.log('Woof!')
+            }
+            static definition(){
+                console.log('Un perro es un animal')
+            }
+            //getters && setters
+            get getNombre(){
+                return this.nombre
+            }
+            set setNombre(newName){
+                this.nombre = newName;
+            }
+        }
+
+        const over = new Perro('Over','male', 'rational')
+        over.ladrar()
+        console.log(over)
+        Perro.definition()
+        console.log(over.getNombre)
+        over.setNombre = 'Mono'
+        console.log(over.getNombre) */
+
+
+        //#22 - 23 Prototipos
+
+        /* function Animal(nombre, genero) {
+            //atributos
+            this.nombre = nombre;
+            this.genero = genero;
+
+        } */
+        //metodos: se asignan a prototype y no a la funcino constructora
+        
+        /* Animal.prototype.sonar= function(){
+            console.log('sonandooo')
+        }
+        Animal.prototype.saludar= function(){
+            console.log(`Hola, mi nombre es ${this.nombre} y soy de genero ${this.genero}`)
+        } */
+
+        /* const over = new Animal('Over', 'Macho racional')
+        const susi = new Animal('Susi', 'Hembra')
+        console.log(over)
+        console.log(susi)
+        over.saludar()
+        susi.saludar() */
+
+        //Herencia prototipica
+        /* function Dog(name, genre, size){
+            this.super = Animal
+            this.super(name, genre)
+            this.size = size
+            
+        } */
+        //perro esta heredando de animal
+        /* Dog.prototype = new Animal()
+        Dog.prototype.constructor = Dog
+ */
+        //sobreescritura de metodos del padre en el hijo
+       /*  Dog.prototype.sonar = function(){
+            console.log('guauu')
+        }
+        Dog.prototype.ladrar = function(){
+            console.log('wof wof')
+        }
+
+        const over = new Dog('Over', 'rational male', 'small')
+        console.log(over)
+        over.sonar() */
+        //#20 REST
+
+        /* function sumar(a,b,...c){
+            let suma = 0;
+            console.log(c)
+            for(let num of c) {
+                
+                suma += num;
+            }
+            return a + b + suma;
+        }
+
+        sumar(1,2,3,4,5,6,7,8,9,10,11) */
+
+        //#17 continue
+
+        /* const nums = [1, 2, 3, 4, 5, 6 , 7, 8, 9, 10, 11, 12, 13, 14, 15]
+        for(let i = 0; i < nums.length; i++) {
+            if (nums[i] % 4 !== 0) {
+                continue;
+            }
+            console.log(nums[i])
+        } */
+    </script>
+</body>
+</html>

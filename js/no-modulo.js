@@ -1,0 +1,1 @@
+console.log('navegador no soporta modulos ES6')
